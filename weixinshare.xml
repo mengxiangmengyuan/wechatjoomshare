@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.8" group="system" method="upgrade">
+	<name>PLG_SYSTEM_WEIXINSHARE</name>
+	<creationDate>June 2019</creationDate>
+	<author>MXMY</author>
+	<authorEmail>24739983@qq.com</authorEmail>
+	<authorUrl>github.com/mengxiangmengyuan</authorUrl>
+	<copyright>mengxiangmengyuan.com</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>PLG_SYSTEM_WEIXINSHARE_XML_DESCRIPTION</description>
+
+	<!-- Scripts to run on installation -->
+	<scriptfile></scriptfile>
+
+	<!-- Language files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_weixinshare.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_weixinshare.sys.ini</language>
+		<language tag="zh-CN">zh-CN/zh-CN.plg_system_weixinshare.ini</language>
+		<language tag="zh-CN">zh-CN/zh-CN.plg_system_weixinshare.sys.ini</language>
+	</languages>
+
+	<!-- Plugin files -->
+	<files>
+		<filename plugin="weixinshare">weixinshare.php</filename>
+		<folder>language</folder>
+	</files>
+
+	<!-- Config parameter -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="appid"
+					type="text"
+					default=""
+					label="PLG_SYSTEM_WEIXINSHARE_APPID_LABEL"
+					description="PLG_SYSTEM_WEIXINSHARE_APPID_DESCRIPTION"
+				/>
+				<field
+					name="appsecret"
+					type="text"
+					default=""
+					label="PLG_SYSTEM_WEIXINSHARE_APPSECRET_LABEL"
+					description="PLG_SYSTEM_WEIXINSHARE_APPSECRET_DESCRIPTION"
+				/>
+				<field
+					name="wximg"
+					type="media"
+					default=""
+					label="PLG_SYSTEM_WEIXINSHARE_WXIMG_LABEL"
+					description="PLG_SYSTEM_WEIXINSHARE_WXIMG_DESCRIPTION"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="weixinshare">https://www.mengxiangmengyuan.com/update/plg_weixinshare.xml</server>
+	</updateservers>
+</extension>
