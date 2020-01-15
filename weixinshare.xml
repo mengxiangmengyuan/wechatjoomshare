@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.1" encoding="utf-8"?>
 <extension type="plugin" version="3.8" group="system" method="upgrade">
 	<name>PLG_SYSTEM_WEIXINSHARE</name>
 	<creationDate>June 2019</creationDate>
-	<author>MXMY</author>
+	<author>zhuameng</author>
 	<authorEmail>24739983@qq.com</authorEmail>
 	<authorUrl>github.com/mengxiangmengyuan</authorUrl>
-	<copyright>mengxiangmengyuan.com</copyright>
+	<copyright>www.zhuameng.com</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>1.0</version>
+	<version>1.1</version>
 	<description>PLG_SYSTEM_WEIXINSHARE_XML_DESCRIPTION</description>
 
-	<!-- Scripts to run on installation -->
-	<scriptfile></scriptfile>
 
 	<!-- Language files -->
 	<languages folder="language">
@@ -58,6 +56,6 @@
 
 	<!-- Update servers -->
 	<updateservers>
-		<server type="extension" priority="1" name="weixinshare">https://www.mengxiangmengyuan.com/update/plg_weixinshare.xml</server>
+		<server type="extension" priority="1" name="weixinshare">https://www.zhuameng.com/update/plg_weixinshare.xml</server>
 	</updateservers>
 </extension>

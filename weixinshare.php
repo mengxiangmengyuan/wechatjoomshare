@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package    weixinshare
  *
@@ -156,7 +157,7 @@ class plgSystemWeixinshare extends CMSPlugin
 		$cachetoken = $this->get_php_file('access_token.php');
 		if ($cachetoken) {
 			if ($cachetoken->expire_time > time() && isset($cachetoken->access_token)) {
-				$this->set_php_file("data_access.php", "get token from local");
+				//$this->set_php_file("data_access.php", "get token from local");
 				return $cachetoken->access_token;
 			}
 		}
@@ -194,7 +195,7 @@ class plgSystemWeixinshare extends CMSPlugin
 		$cacheticket = $this->get_php_file('jsapi_ticket.php');
 		if ($cacheticket) {
 			if ($cacheticket->expire_time > time() && isset($cacheticket->ticket)) {
-				//$this->set_php_file("data_ticket.php", "get ticket from local");
+				$this->set_php_file("data_ticket.php", "get ticket from local");
 				return $cacheticket->ticket;
 			}
 		}
